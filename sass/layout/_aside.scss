@@ -1,0 +1,29 @@
+@use "../utils/color" as clr;
+@use "../utils/mixin" as mix;
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: fixed;
+  z-index: -1;
+  height: calc(100vh - 5rem);
+  width: 6rem;
+  right: 0;
+
+  .email {
+    position: relative;
+    transform: rotate(90deg);
+  }
+  .email:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    margin: 0 0 0 16px;
+    width: 150px;
+    height: 2px;
+    background-color: clr.$lightest-slate;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../utils/color" as clr;
+section {
+  padding: 3rem 5rem 0 5rem;
+  .text-green {
+    color: clr.$light-green;
+  }
+  .mid-heading {
+    font-size: 1.5rem;
+  }
+  .mid-heading {
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .mid-heading::after {
+    content: "";
+    position: absolute;
+    background-color: clr.$light-green;
+    width: 200px;
+    height: 1px;
+    z-index: 2;
+    top: 0.99rem;
+    left: 8.5rem;
+  }
+}

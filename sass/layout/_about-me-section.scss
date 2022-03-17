@@ -1,0 +1,42 @@
+@use "../utils/color" as clr;
+
+.about__me {
+  display: flex;
+  padding-top: 10rem;
+  p:first-of-type {
+    margin-top: 2rem;
+  }
+  .my-info {
+    background-color: red;
+  }
+  .my-img {
+    position: relative;
+  }
+  .my-img img {
+    margin: 3.5rem 0 0 1rem;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 10px;
+  }
+  .my-details {
+    margin: 2rem 0;
+    display: flex;
+    padding: 1rem;
+    border-left: 2px solid clr.$light-green;
+  }
+
+  .about-me-value {
+    padding-left: 2rem;
+  }
+  ul {
+    list-style-type: none;
+    color: clr.$slate;
+  }
+  li::before {
+    content: "▸";
+    color: clr.$light-green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+  }
+}

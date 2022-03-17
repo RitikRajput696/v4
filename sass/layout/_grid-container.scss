@@ -1,0 +1,28 @@
+.grid__container {
+  max-width: 1920px;
+  position: relative;
+  // width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main aside"
+    "sidebar footer aside";
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-rows: 5rem 1fr 5rem;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}

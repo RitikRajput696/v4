@@ -1,0 +1,9 @@
+@use "../utils/color" as clr;
+
+a {
+  text-decoration: none;
+  color: clr.$off-white;
+}
+a:hover {
+  color: clr.$light-green;
+}

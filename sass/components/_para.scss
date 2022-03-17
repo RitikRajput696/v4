@@ -1,0 +1,5 @@
+@use "../utils/color" as clr;
+p {
+  color: clr.$slate;
+  margin-bottom: 1rem;
+}

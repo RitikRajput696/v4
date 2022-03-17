@@ -1,0 +1,14 @@
+@use "../utils/color" as clr;
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: clr.$navy;
+  color: clr.$off-white;
+  overflow-x: hidden;
+  font-size: 1.1rem;
+  font-family: "Fredoka", sans-serif;
+}

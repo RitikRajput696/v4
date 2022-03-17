@@ -1,0 +1,18 @@
+@use "../utils/color" as clr;
+
+button {
+  color: clr.$off-white;
+  background: transparent;
+  border: 1px solid clr.$light-green;
+  font-size: 1rem;
+  color: clr.$light-green;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: ease 200ms;
+}
+button:hover {
+  cursor: pointer;
+  background-color: clr.$light-green;
+  color: clr.$navy;
+  box-shadow: 0 0 10px clr.$light-green;
+}

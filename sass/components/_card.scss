@@ -1,0 +1,50 @@
+@use "../utils/color" as clr;
+
+.card-container {
+  width: 100%;
+  a {
+    background-color: #112240;
+    &:hover {
+      color: clr.$off-white;
+    }
+  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  gap: 1rem;
+  .card {
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .card-heading {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .card-heading:hover {
+      color: clr.$light-green;
+    }
+    .card-para {
+      color: clr.$slate;
+    }
+  }
+  .card-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .file-icon img {
+    width: 2.5rem;
+  }
+  .share-icon svg {
+    width: 1.5rem;
+    fill: clr.$off-white;
+  }
+  .share-icon svg:hover {
+    fill: clr.$light-green;
+  }
+  .card-label {
+    margin-top: auto;
+  }
+}

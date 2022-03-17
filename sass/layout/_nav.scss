@@ -1,0 +1,35 @@
+@use "../utils/mixin" as mix;
+@use "../utils/color" as clr;
+
+nav {
+  @include mix.d-flex;
+  width: 90vw;
+  height: 100%;
+  justify-content: space-between;
+  .logo {
+    font-size: 2rem;
+    color: clr.$light-green;
+  }
+}
+.nav__links {
+  padding: 1rem 2rem;
+  transition: transform 0.5s ease-in;
+  a {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+  }
+}
+.hamburger {
+  display: none;
+  width: 35px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.ham-item {
+  width: 30px;
+  height: 4px;
+  margin-top: 4px;
+  background-color: clr.$light-green;
+}

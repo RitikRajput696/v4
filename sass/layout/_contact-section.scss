@@ -1,0 +1,65 @@
+@use "../utils/color" as clr;
+
+.contact__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+
+  & > div {
+    max-width: 36.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h1,
+  .form-para {
+    text-align: center;
+    margin: 0.3rem;
+  }
+  .mid-heading::after {
+    display: none;
+  }
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.form {
+  width: 90%;
+  label {
+    padding-bottom: 0.3rem;
+  }
+  input,
+  textarea {
+    border-radius: 10px;
+    text-indent: 1rem;
+    outline: none;
+    background-color: clr.$navy;
+    border: 2px solid clr.$slate;
+    color: clr.$off-white;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 2px solid clr.$light-green;
+  }
+  input {
+    height: 3rem;
+    width: 100%;
+  }
+  textarea {
+    padding: 1.5rem;
+  }
+}
+// #status {
+//   color: red;
+// }

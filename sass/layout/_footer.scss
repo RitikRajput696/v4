@@ -1,0 +1,16 @@
+@use "../utils/color" as clr;
+
+footer {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+  padding-bottom: 2rem;
+
+  color: clr.$slate;
+  a {
+    color: clr.$slate;
+  }
+}
